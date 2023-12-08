@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Library</h1>
+            <button id="add-book-btn" type="button">Log In</button>
+        </div>
+    </header>
+        <main class="main-container">
+            <button id="add-book" type="button">add book + </button>
+            <div class="main-grid">
+                <div class="bookshelf">
+                    <h1>title</h1>
+                    <h1>author</h1>
+                    <h1>pages</h1>
+                    <h1>read</h1>
+                </div>
+                <div class="bookshelf">
+                    <h1>title</h1>
+                    <h1>author</h1>
+                    <h1>pages</h1>
+                    <h1>read</h1>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <div class="modal" id="myModal">
+        <form class="book-new">
+            <h3>Add new book</h3>
+            <input class="input" type="text" id="title" placeholder="title" required maxlength="100">
+            <input class="input" type=" text" id="author" placeholder="author" required maxlength="100">
+            <input class="input" type="number" id="author" placeholder="pages" required maxlength="10000">
+            <div class="is-read">
+                <label for="is-read">Have you read it?</label>
+                <input type="checkbox" id="isRead">
+            </div>
+            <button type="submit" class="btn-submit">submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
